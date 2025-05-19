@@ -19,6 +19,13 @@
       "dest": "/images/$1"
     },
     {
+      "src": "/Satish_Dasu_CV.pdf",
+      "headers": {
+        "Content-Type": "application/pdf"
+      },
+      "dest": "/Satish_Dasu_CV.pdf"
+    },
+    {
       "src": "/(.*)",
       "dest": "/index.html"
     }

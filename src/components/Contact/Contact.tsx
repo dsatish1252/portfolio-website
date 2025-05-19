@@ -190,18 +190,8 @@ const Contact: React.FC = () => {
                 <a 
                   href="/Satish_Dasu_CV.pdf" 
                   className="inline-flex items-center gap-2 px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-colors"
-                  download
                   target="_blank"
                   rel="noopener noreferrer"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    const link = document.createElement('a');
-                    link.href = '/Satish_Dasu_CV.pdf';
-                    link.download = 'Satish_Dasu_CV.pdf';
-                    document.body.appendChild(link);
-                    link.click();
-                    document.body.removeChild(link);
-                  }}
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
