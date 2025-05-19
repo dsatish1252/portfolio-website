@@ -190,20 +190,17 @@ const Contact: React.FC = () => {
                 <a 
                   href="/Satish_Dasu_CV.pdf" 
                   className="inline-flex items-center gap-2 px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-colors"
-                  download="Satish_Dasu_CV.pdf"
+                  download
+                  target="_blank"
+                  rel="noopener noreferrer"
                   onClick={(e) => {
-                    // Add error handling
-                    const link = e.currentTarget;
-                    fetch(link.href)
-                      .then(response => {
-                        if (!response.ok) {
-                          throw new Error('CV file not found');
-                        }
-                      })
-                      .catch(error => {
-                        e.preventDefault();
-                        alert('CV file is not available at the moment. Please try again later or contact me directly.');
-                      });
+                    e.preventDefault();
+                    const link = document.createElement('a');
+                    link.href = '/Satish_Dasu_CV.pdf';
+                    link.download = 'Satish_Dasu_CV.pdf';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
                   }}
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
