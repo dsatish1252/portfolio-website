@@ -11,7 +11,7 @@ export const heroData = {
   intro: 'Full Stack Development & Data Science Enthusiast',
   name: 'Satish Dasu',
   title: 'Passionate IT Graduate',
-  image: './images/profile.png',
+  image: '/images/profile.png',
   socialLinks: [
     { name: 'LinkedIn', url: 'https://www.linkedin.com/in/satish-dasu-3599b2265/', icon: 'Linkedin' },
     { name: 'GitHub', url: 'https://github.com/dsatish1252', icon: 'Github' },

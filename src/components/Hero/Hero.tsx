@@ -88,7 +88,7 @@ const Hero: React.FC = () => {
         <div className="hero-image relative flex-1 flex justify-center lg:justify-end opacity-0 animate-fade-in" style={{animationDelay: '1.2s'}}>
           <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white/20 shadow-2xl">
             <img 
-              src={heroData.image} 
+              src={new URL(heroData.image, import.meta.url).href}
               alt={heroData.name} 
               className="w-full h-full object-cover"
               onError={(e) => {
