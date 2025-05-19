@@ -89,6 +89,11 @@ const About: React.FC = () => {
                   src={`${aboutData.image}?t=${Date.now()}`}
                   alt="Satish Dasu" 
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.onerror = null; // Prevent infinite loop
+                    target.src = 'https://via.placeholder.com/400x400?text=Profile+Image';
+                  }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 w-full p-6">

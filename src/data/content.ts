@@ -11,7 +11,7 @@ export const heroData = {
   intro: 'Full Stack Development & Data Science Enthusiast',
   name: 'Satish Dasu',
   title: 'Passionate IT Graduate',
-  image: '/images/profile.png',
+  image: './images/profile.png',
   socialLinks: [
     { name: 'LinkedIn', url: 'https://www.linkedin.com/in/satish-dasu-3599b2265/', icon: 'Linkedin' },
     { name: 'GitHub', url: 'https://github.com/dsatish1252', icon: 'Github' },
@@ -21,7 +21,7 @@ export const heroData = {
 
 export const aboutData = {
   bio: 'I am a passionate developer with hands-on experience in both web development and data science. I build full-stack web applications using technologies like React, Node.js, Express.js, MongoDB, and PostgreSQL. Alongside my web development expertise, I also have strong knowledge in data science, including Python, pandas, scikit-learn, and data visualization tools. I have worked on projects involving machine learning, data analysis, and AI-driven solutions, demonstrating my ability to extract insights and build intelligent applications. My goal is to combine the power of data science and web development to create impactful digital experiences.',
-  image: '/images/profile.png',
+  image: './images/profile.png',
   tabs: [
     {
       name: 'Skills',

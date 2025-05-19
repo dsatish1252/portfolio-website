@@ -91,6 +91,11 @@ const Hero: React.FC = () => {
               src={heroData.image} 
               alt={heroData.name} 
               className="w-full h-full object-cover"
+              onError={(e) => {
+                const target = e.target as HTMLImageElement;
+                target.onerror = null; // Prevent infinite loop
+                target.src = 'https://via.placeholder.com/400x400?text=Profile+Image';
+              }}
             />
           </div>
           <div className="absolute inset-0 bg-gradient-to-r from-primary-600/20 to-secondary-700/20 rounded-full"></div>
