@@ -163,8 +163,8 @@ export const projectsData = [
     description: 'A full-stack, multi-user note-taking app that allows users to securely create, read, update, and delete personal notes. The app supports user authentication and real-time updates, ensuring data persistence through PostgreSQL and seamless API communication with a Node.js and Express.js backend.\n\nReact.js with Material UI is used to deliver a clean and interactive frontend experience. This application is designed with productivity and simplicity in mind, enabling users to manage their notes across sessions and devices.',
     image: 'https://images.pexels.com/photos/3243/pen-calendar-to-do-checklist.jpg',
     tags: ['React.js', 'Node.js', 'Express.js', 'PostgreSQL', 'JWT', 'Material UI'],
-    demoLink: 'https://dsatish1252.github.io/Notes/',
-    codeLink: 'https://github.com/dsatish1252/Notes',
+    demoLink: 'https://github.com/dsatish1252/note-taking-app',
+    codeLink: 'https://github.com/dsatish1252/note-taking-app',
   },
   {
     id: 4,
