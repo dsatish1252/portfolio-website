@@ -196,13 +196,13 @@ export const projectsData = [
 ];
 
 export const contactData = {
-  email: 'satish@example.com',
+  email: 'isatishdasu@gmail.com.com',
   phone: '+91 7981500979',
   address: 'Gudivada, Andhra Pradesh, India',
   socials: [
     { name: 'Facebook', url: 'https://facebook.com', icon: 'Facebook' },
-    { name: 'Instagram', url: 'https://instagram.com', icon: 'Instagram' },
-    { name: 'LinkedIn', url: 'https://linkedin.com', icon: 'Linkedin' },
-    { name: 'Twitter', url: 'https://twitter.com', icon: 'Twitter' },
+    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/satish-dasu-3599b2265/', icon: 'Linkedin' },
+    { name: 'GitHub', url: 'https://github.com/dsatish1252', icon: 'Github' },
+    { name: 'LeetCode', url: 'https://leetcode.com/u/satish_dasu/', icon: 'LeetCode' },
   ],
 };
